@@ -1,0 +1,145 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f9f9f9; /* Very light background */
+    color: #333333; /* Dark text */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    overflow: auto; /* Allow scrolling */
+}
+
+.container {
+    text-align: center;
+    background: #ffffff; /* White background */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    max-width: 100%; /* Ensure container fits within viewport */
+    box-sizing: border-box; /* Includes padding in width calculations */
+    overflow: auto; /* Allow scrolling within the container */
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #4a4a4a; /* Dark gray text */
+}
+
+table {
+    width: 100%; /* Full width of container */
+    border-collapse: collapse;
+    margin-bottom: 30px;
+    box-sizing: border-box; /* Includes padding in width calculations */
+}
+
+th, td {
+    border: 1px solid #cccccc; /* Light gray border */
+    height: 20px;
+    padding: 10px;
+    text-align: center;
+    color: #333333; /* Dark text */
+    vertical-align: middle; /* Center text vertically */
+}
+
+th {
+    background-color: #e6f7ff; /* Very light blue background */
+}
+
+th.poin {
+    width: 80px;
+}
+
+.answers {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    overflow: auto; /* Allow scrolling within this section if needed */
+}
+
+.answer-box {
+    width: 120px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #d0e8ff; /* Light pastel blue */
+    color: #333333; /* Dark text */
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+    box-sizing: border-box; /* Includes padding in width calculations */
+}
+
+.answer-box:hover {
+    background-color: #b0d6ff; /* Slightly darker pastel blue on hover */
+    transform: scale(1.05);
+}
+
+.answer-box:active {
+    background-color: #8ac2ff; /* Even darker pastel blue on click */
+    transform: scale(1);
+}
+
+.answer-box.disabled {
+    background-color: #a0a0a0; /* Disabled state gray */
+    cursor: not-allowed;
+}
+
+/* Style for the back button */
+.back-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #d0e8ff; /* Light pastel blue */
+    color: #333333; /* Dark text */
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.back-button:hover {
+    background-color: #b0d6ff; /* Slightly darker pastel blue on hover */
+    transform: scale(1.05);
+}
+
+.back-button:active {
+    background-color: #8ac2ff; /* Even darker pastel blue on click */
+    transform: scale(1);
+}
+
+/* Style for the question buttons */
+.question-buttons {
+    margin-bottom: 20px;
+}
+
+.question-button {
+    background-color: #cce5ff; /* Light blue background */
+    color: #333333; /* Dark text */
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.question-button:hover {
+    background-color: #99ccff; /* Slightly darker blue on hover */
+    transform: scale(1.05);
+}
+
+.question-button:active {
+    background-color: #66b3ff; /* Even darker blue on click */
+    transform: scale(1);
+}
+
+.question-button.active {
+    background-color: #3399ff; /* Activated state background color */
+    color: #ffffff; /* Text color for active state */
+}
+
+#totalPoints {
+    font-size: 30px;
+}
